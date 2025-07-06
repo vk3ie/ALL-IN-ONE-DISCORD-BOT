@@ -1,7 +1,7 @@
 const { ActivityType } = require('discord.js');
 
 module.exports = {
-  ownerId: '1004206704994566164',
+  ownerId: '1335347339522609184',
   status: {
     rotateDefault: [
       { name: 'PoProstuServer', type: ActivityType.Streaming, url: 'https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran' }
