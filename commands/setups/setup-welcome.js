@@ -98,12 +98,12 @@ module.exports = {
 
             const embed = new EmbedBuilder()
                 .setColor('#3498db')
-                .setTitle('📋 Welcome Settings')
+                .setTitle('<:Settings:1391564141768081469> Ustawienia - Powitalnia')
                 .addFields(
-                    { name: 'Server ID', value: config.serverId, inline: true },
-                    { name: 'Channel', value: config.welcomeChannelId ? `<#${config.welcomeChannelId}>` : 'Not set', inline: true },
-                    { name: 'Channel Status', value: config.channelStatus ? '✅ Enabled' : '❌ Disabled', inline: true },
-                    { name: 'Welcome DM', value: config.dmStatus ? '✅ Enabled' : '❌ Disabled', inline: true }
+                    { name: 'ID Servera', value: config.serverId, inline: true },
+                    { name: 'Kanał', value: config.welcomeChannelId ? `<#${config.welcomeChannelId}>` : 'Not set', inline: true },
+                    { name: 'Status Kanału', value: config.channelStatus ? '✅ Włączone' : '❌ Wyłączone', inline: true },
+                    { name: 'Powitalnia DM', value: config.dmStatus ? '✅ Włączone' : '❌ Wyłączone', inline: true }
                 )
                 .setTimestamp();
 
