@@ -149,17 +149,21 @@ async function handleWelcomeChannel(member, welcomeSettings) {
         const attachment = new AttachmentBuilder(cardBuffer, { name: 'welcome.png' });
 
         const welcomeEmbed = new EmbedBuilder()
-            .setTitle("Welcome!")
-            .setDescription(`${member}, You are the **${memberCount}${suffix}** member of our server!`)
+            .setTitle("`👋` Cześć nowy użytkowniku, Witaj na serwerze ,,PoProstuServer" ")
+            .setDescription(`${member}, Jesteś **${memberCount}${suffix}** Użytkownikiem na tym Serwerze!`)
+            .setDescription(`Mamy Nadzieję, że zostaniesz z nami na dłużej!`)
+            .SetDescription(`Pamiętaj aby przeczytać Regulamin Serwera na kanale https://discord.com/channels/1390640869391990864/1390640872831586309.`)
+            .setDescription(`Przeczytaj https://discord.com/channels/1390640869391990864/1390640874970677303 oraz https://discord.com/channels/1390640869391990864/1390640874190405652.`)
+            .SetDescription(`Wybierz sobie role na kanale https://discord.com/channels/1390640869391990864/1390640875784114317 aby ulepszyć swój profil.`)
             .setColor("#00e5ff")
             .setThumbnail(serverIcon)
             .setImage('attachment://welcome.png')
             .addFields(
-                { name: 'Username', value: username, inline: true },
-                { name: 'Join Date', value: joinDate, inline: true },
-                { name: 'Account Created', value: creationDate, inline: true }
+                { name: 'Nazwa Użytkownika', value: username, inline: true },
+                { name: 'Data Dołączenia', value: joinDate, inline: true },
+                { name: 'Konto Stworzone', value: creationDate, inline: true }
             )
-            .setFooter({ text: "We're glad to have you here!", iconURL: serverIcon })
+            .setFooter({ text: "PoProstuServer I 💎", iconURL: serverIcon })
             .setAuthor({ name: username, iconURL: user.displayAvatarURL() })
             .setTimestamp();
 
