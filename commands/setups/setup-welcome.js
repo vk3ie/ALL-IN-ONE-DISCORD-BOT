@@ -103,7 +103,7 @@ module.exports = {
                     { name: 'ID Serwera', value: config.serverId, inline: true },
                     { name: 'Kanał', value: config.welcomeChannelId ? `<#${config.welcomeChannelId}>` : 'Not set', inline: true },
                     { name: 'Status Kanału', value: config.channelStatus ? '✅ Włączone' : '❌ Wyłączone', inline: true },
-                    { name: 'Powitalnia DM', value: config.dmStatus ? '✅ Włączone' : '❌ Wyłączone', inline: true }
+                    { name: 'Powitania DM', value: config.dmStatus ? '✅ Włączone' : '❌ Wyłączone', inline: true }
                 )
                 .setTimestamp();
 
